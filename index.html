@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hypeboocks - Para o amor da minha vida</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://emoji.gg/assets/emoji/5227_pink_heart.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypeboocks</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #stars-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Fica atrás do conteúdo principal */
+        }
+        .message {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: bold; /* Destacar a mensagem */
+        }
+    </style>
 </head>
 <body>
-  <canvas id="stars-bg"></canvas>
-  <div class="container">
-    <h1>Hypeboocks 📚💕</h1>
-    <div id="login-section">
-      <h2>Bem-vindo(a)!</h2>
-      <input id="nome" type="text" placeholder="Seu nome fofo"/>
-      <button onclick="login()">Entrar</button>
+    <canvas id="stars-bg"></canvas>
+    
+    <div class="content">
+        <!-- Estrutura de login -->
+        <h1>Bem-vindo ao Hypeboocks!</h1>
+        <p>Por favor, faça o login.</p>
+        <!-- Botões de login e outras funcionalidades -->
+        <button>Login</button>
+        <button>Registrar</button>
+        
+        <!-- Mensagem centralizada -->
+        <div class="message">
+            Com carinho para a miúda mais linda e bela da minha vida
+        </div>
     </div>
-    <div id="main-section" style="display:none;">
-      <h2 id="saudacao"></h2>
-      <div class="botoes">
-        <a href="livros/exemplo.html" class="botao">Ler um livro incrível</a>
-        <button class="botao" onclick="escreverLivro()">Escrever um livro</button>
-      </div>
-    </div>
-  </div>
-  <footer>
-    para o amor da minha vida <span class="coracao">❤</span>
-  </footer>
-  <script src="script.js"></script>
-  <script src="stars.js"></script>
+
+    <script src="stars.js"></script>
 </body>
 </html>
