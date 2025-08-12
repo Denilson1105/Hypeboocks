@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffe0ec 0%, #e0f7fa 100%);
+  font-family: 'Quicksand', cursive, sans-serif;
+  min-height: 100vh;
+  color: #ad1457;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff6fa;
+  border-radius: 2rem;
+  box-shadow: 0 6px 24px #fbc2eb44;
+  padding: 2.5rem 3rem;
+  margin-top: 4rem;
+  text-align: center;
+  min-width: 320px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  color: #f06292;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  border: 1px solid #f48fb1;
+  border-radius: 100px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  outline: none;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+button, .botao {
+  background: linear-gradient(90deg, #f48fb1 0%, #ce93d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px #f8bbd055;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .botao:hover {
+  box-shadow: 0 6px 24px #f48fb155;
+  background: linear-gradient(90deg, #ce93d8 0%, #f48fb1 100%);
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  color: #ad1457;
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  background: transparent;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.coracao {
+  color: #f06292;
+  margin-left: 6px;
+  font-size: 1.4em;
+}
